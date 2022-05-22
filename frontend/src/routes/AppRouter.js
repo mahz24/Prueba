@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "../components/Navbar";
 import CharactersByLocation from "../pages/CharactersByLocation";
 import Home from "../pages/Home";
 
@@ -8,7 +7,6 @@ const AppRouter = () => {
   return (
     <Router>
       <div>
-        <Navbar />
         <div className="container my-3">
           <Routes>
             <Route path="/" element={<Home />} />
